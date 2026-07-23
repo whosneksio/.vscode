@@ -18,7 +18,7 @@
     "workbench.iconTheme": "symbols",
     "workbench.list.smoothScrolling": true,
     "workbench.layoutControl.enabled": false,
-    "workbench.colorTheme": "Borderless Tokyo Night",
+    "workbench.colorTheme": "Vesper ++",
 
     "window.zoomLevel": 0.35,
     "window.commandCenter": false,
@@ -27,26 +27,9 @@
     "explorer.compactFolders": false,
 
     "breadcrumbs.enabled": false,
-
-    "apc.statusBar": {
-        "height": 24,
-        "fontSize": 12
-    },
-
-    "apc.header": {
-        "height": 36
-    },
-
-    "apc.listRow": {
-        "height": 24
-    },
-
-    "apc.stylesheet": {
-        ".title-label > h2": "display: none;",
-        ".editor-actions": "opacity: 0.1; transition: .2s;",
-        ".editor-actions:hover": "opacity: 1; transition: .2s;",
-    },
-
-    "apc.font.family": "Inter",
+    "workbench.activityBar.location": "top",
+    "window.menuBarVisibility": "compact",
+    
+    "claudeCode.useTerminal": true,
+    "git.autofetch": true
 }
-

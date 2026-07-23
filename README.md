@@ -6,18 +6,17 @@
 
 ### Theming
 
-- [Apc Customize UI++](https://marketplace.visualstudio.com/items?itemName=drcika.apc-extension)
-- [Borderless Tokyo Night](https://marketplace.visualstudio.com/items?itemName=gusvasconcelos.borderless-tokyonight)
-- [Symbols](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.symbols)
+- Vesper ++
+- Symbols
 
 ### Utility
 
-- [Discord Rich Presence](https://marketplace.visualstudio.com/items?itemName=LeonardSSH.vscord)
-- [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
-- [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
-- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [Ruff](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff)
+- GitHub Pull Requests
+- Prettier
+- Pretter ESLint
+- Database Client
+- Database Client JDBC
+- Claude Code for VS Code
 
 ## settings.json
 
@@ -42,7 +41,7 @@
     "workbench.iconTheme": "symbols",
     "workbench.list.smoothScrolling": true,
     "workbench.layoutControl.enabled": false,
-    "workbench.colorTheme": "Borderless Tokyo Night",
+    "workbench.colorTheme": "Vesper ++",
 
     "window.zoomLevel": 0.35,
     "window.commandCenter": false,
@@ -51,26 +50,40 @@
     "explorer.compactFolders": false,
 
     "breadcrumbs.enabled": false,
+    "workbench.activityBar.location": "top",
+    "window.menuBarVisibility": "compact",
+    
+    "claudeCode.useTerminal": true,
+    "git.autofetch": true
+}
+```
 
-    "apc.statusBar": {
-        "height": 24,
-        "fontSize": 12
-    },
+## Claude's settings.json
 
-    "apc.header": {
-        "height": 36
-    },
-
-    "apc.listRow": {
-        "height": 24
-    },
-
-    "apc.stylesheet": {
-        ".title-label > h2": "display: none;",
-        ".editor-actions": "opacity: 0.1; transition: .2s;",
-        ".editor-actions:hover": "opacity: 1; transition: .2s;",
-    },
-
-    "apc.font.family": "Inter",
+```json
+{
+  "env": {
+    "ANTHROPIC_BASE_URL": "",
+    "ANTHROPIC_AUTH_TOKEN": "",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "CLAUDE_CODE_ATTRIBUTION_HEADER": "0",
+    "DISABLE_TELEMETRY": "1",
+    "DISABLE_ERROR_REPORTING": "1",
+    "DISABLE_AUTOUPDATER": "1",
+    "DISABLE_BUG_COMMAND": "1",
+    "DISABLE_COST_WARNINGS": "1",
+    "DISABLE_NON_ESSENTIAL_MODEL_CALLS": "1"
+  },
+  "permissions": {
+    "defaultMode": "bypassPermissions"
+  },
+  "model": "",
+  "enabledPlugins": {
+    "claude-code-setup@claude-plugins-official": true
+  },
+  "effortLevel": "low",
+  "autoUpdatesChannel": "latest",
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "dark"
 }
 ```
